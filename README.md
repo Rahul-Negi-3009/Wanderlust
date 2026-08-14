@@ -173,7 +173,7 @@ These routes form the current core of the application's listing-management syste
 ## Listing Data Model
 
 Each listing currently contains:
-
+```
 Listing
 │
 ├── title
@@ -182,7 +182,7 @@ Listing
 ├── price
 ├── location
 └── country
-
+```
 The model is defined using Mongoose and stored in MongoDB.
 
 ## Validation and Error Handling
@@ -190,7 +190,7 @@ The model is defined using Mongoose and stored in MongoDB.
 Before creating or updating a listing, the request body is validated using Joi.
 
 The application also uses:
-
+```
 Joi
  │
  ├── Validate incoming data
@@ -210,7 +210,7 @@ Centralized Error Middleware
  │
  ▼
 Error Page
-
+```
 This provides a foundation for handling invalid input and asynchronous backend errors consistently.
 
 ## Development Status
