@@ -115,6 +115,7 @@ The project currently follows a server-side rendered architecture:
         │  MongoDB  │
         └───────────┘
 ## Project Structure
+```
 Wanderlust/
 │
 ├── models/
@@ -153,6 +154,7 @@ Wanderlust/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
+```
 ## Current Routes
 
 The application currently provides the following listing routes:
