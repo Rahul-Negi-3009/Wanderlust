@@ -2,13 +2,13 @@
 
 A full-stack accommodation listing web application inspired by modern property-rental platforms, built with Node.js, Express.js, MongoDB, EJS, and JavaScript.
 
-Project Status: In Development
+**Project Status: In Development**
 
 Wanderlust is an ongoing full-stack web development project focused on building a platform where users can browse, view, create, edit, and manage accommodation listings.
 
 The core frontend, backend CRUD operations, MongoDB integration, request validation, and error-handling mechanisms have been implemented. User authentication, authorization, and additional features are currently under development.
 
-About the Project
+## About the Project
 
 Wanderlust is designed as an accommodation listing platform where property information can be stored, displayed, created, updated, and deleted through a web-based interface.
 
@@ -16,8 +16,8 @@ The project follows a server-side rendered architecture using Express.js and EJS
 
 The current implementation focuses on building a strong backend foundation and a functional listing-management system before integrating user authentication and the remaining application features.
 
-Current Features
-Listing Management
+## Current Features
+### Listing Management
 View all available listings
 View individual listing details
 Create new listings
@@ -25,7 +25,7 @@ Edit existing listings
 Delete listings
 Display property image, title, description, price, location, and country
 Display prices using Indian number formatting
-CRUD Operations
+### CRUD Operations
 
 The application currently implements the complete CRUD workflow:
 
@@ -33,12 +33,12 @@ Create  →  Add a new listing
 Read    →  View all listings / individual listing
 Update  →  Edit an existing listing
 Delete  →  Remove a listing
-Database Integration
+### Database Integration
 MongoDB used as the primary database
 Mongoose used for database interaction
 Listing schema/model created using Mongoose
 Persistent storage for listing information
-Data Validation
+### Data Validation
 
 The application uses Joi to validate listing data before it reaches the database.
 
@@ -53,13 +53,13 @@ Image
 
 Invalid data generates an application error instead of being directly stored.
 
-Error Handling
+### Error Handling
 
 The project includes a custom ExpressError class and an asynchronous route wrapper to simplify error propagation.
 
 This allows asynchronous route errors to be passed to the centralized Express error-handling middleware.
 
-Frontend
+### Frontend
 
 The application uses:
 
@@ -72,7 +72,7 @@ Google Fonts
 
 The listing interface uses a card-based layout for displaying properties.
 
-Tech Stack
+## Tech Stack
 Technology	Purpose
 HTML5	Page structure
 CSS3	Custom styling
@@ -87,7 +87,7 @@ Joi	Request/data validation
 Bootstrap	Responsive UI components
 Font Awesome	Icons
 Method-Override	PUT/DELETE form requests
-Project Architecture
+## Project Architecture
 
 The project currently follows a server-side rendered architecture:
 
@@ -114,7 +114,7 @@ The project currently follows a server-side rendered architecture:
         ┌───────────┐
         │  MongoDB  │
         └───────────┘
-Project Structure
+## Project Structure
 Wanderlust/
 │
 ├── models/
@@ -153,7 +153,7 @@ Wanderlust/
 ├── package-lock.json
 ├── .gitignore
 └── README.md
-Current Routes
+## Current Routes
 
 The application currently provides the following listing routes:
 
@@ -168,7 +168,7 @@ DELETE	/listings/:id	Delete a listing
 
 These routes form the current core of the application's listing-management system.
 
-Listing Data Model
+## Listing Data Model
 
 Each listing currently contains:
 
@@ -183,7 +183,7 @@ Listing
 
 The model is defined using Mongoose and stored in MongoDB.
 
-Validation and Error Handling
+## Validation and Error Handling
 
 Before creating or updating a listing, the request body is validated using Joi.
 
@@ -211,8 +211,8 @@ Error Page
 
 This provides a foundation for handling invalid input and asynchronous backend errors consistently.
 
-Development Status
-Completed
+## Development Status
+### Completed
 
 Project initialization
 
@@ -246,7 +246,7 @@ Bootstrap-based UI
 
 Custom CSS styling
 
-Currently In Development
+### Currently In Development
 
 User registration
 
@@ -280,7 +280,7 @@ Improved form validation
 
 Production deployment
 
-Getting Started
+## Getting Started
 Prerequisites
 
 Make sure you have the following installed:
@@ -314,7 +314,7 @@ Visit:
 
 http://localhost:8080/listings
 
-What I Have Learned
+## What I Have Learned
 
 Through the development of Wanderlust, I have gained practical experience with:
 
@@ -332,7 +332,7 @@ Using middleware in Express
 Working with HTTP methods such as GET, POST, PUT, and DELETE
 Structuring a Node.js application
 Integrating frontend and backend functionality
-Future Vision
+## Future Vision
 
 The long-term goal of Wanderlust is to evolve the current listing-management application into a complete accommodation platform.
 
@@ -356,7 +356,7 @@ Testing & Deployment
         ↓
 Complete Accommodation Platform
 
-Project Status
+## Project Status
 
 Wanderlust is actively under development.
 
